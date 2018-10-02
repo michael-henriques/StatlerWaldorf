@@ -4,37 +4,30 @@ build:
   steps:    
     - script:
         name: restore
-        cwd: /StatlerWaldorf.TeamService
         code: |
           dotnet restore
     - script:    
         name: build
-        cwd: /StatlerWaldorf.TeamService
         code: |
           dotnet build
     - script:
         name: publish
-        cwd: /StatlerWaldorf.TeamService
         code: |
           dotnet publish -o publish	
     - script:
         name: test-restore
-        cwd: /StatlerWaldorf.TeamService.Tests
         code: |
           dotnet restore
     - script:
         name: test-build
-        cwd: /StatlerWaldorf.TeamService.Tests
         code: |
           dotnet build
     - script:
         name: test-run
-        cwd: /StatlerWaldorf.TeamService.Tests
         code: |
           dotnet test
     - script:
         name: copy binary
-        cwd: /StatlerWaldorf.TeamService
         code: |
           cp -r . $WERCKER_OUTPUT_DIR/app
 deploy:
