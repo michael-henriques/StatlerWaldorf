@@ -14,12 +14,19 @@ namespace StatlerWaldorf.TeamService
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
-        }
-
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
+            //Configuration builder
+            var config = new ConfigurationBuilder()
+                .AddCommandLine(args)
                 .Build();
+
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseStartup<Startup>()
+                .UseConfiguration(config)
+                .Build();
+
+            //Runs the web application on the Kestrel server
+            host.Run();
+        }
     }
 }
