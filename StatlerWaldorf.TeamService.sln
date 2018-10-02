@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatlerWaldorf.TeamService", "StatlerWaldorf.TeamService\StatlerWaldorf.TeamService.csproj", "{23F9CC92-A335-4051-90B2-9A17A5353858}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatlerWaldorf.TeamService", "StatlerWaldorf.TeamService\StatlerWaldorf.TeamService.csproj", "{23F9CC92-A335-4051-90B2-9A17A5353858}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatlerWaldorf.TeamService.Tests", "StatlerWaldorf.TeamService.Tests\StatlerWaldorf.TeamService.Tests.csproj", "{495E74F1-DADB-435B-82C4-055934F9CFE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B2B69EE-7A5A-432E-A72E-99ADBEBCA4B6}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\MyFirstAspNetCoreApp\wercker.yml = ..\..\MyFirstAspNetCoreApp\wercker.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,10 @@ Global
 		{23F9CC92-A335-4051-90B2-9A17A5353858}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23F9CC92-A335-4051-90B2-9A17A5353858}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23F9CC92-A335-4051-90B2-9A17A5353858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495E74F1-DADB-435B-82C4-055934F9CFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495E74F1-DADB-435B-82C4-055934F9CFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495E74F1-DADB-435B-82C4-055934F9CFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495E74F1-DADB-435B-82C4-055934F9CFE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
