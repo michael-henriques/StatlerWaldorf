@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatlerWaldorf.TeamService.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B2B69EE-7A5A-432E-A72E-99ADBEBCA4B6}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\MyFirstAspNetCoreApp\docker_entrypoint.sh = ..\..\MyFirstAspNetCoreApp\docker_entrypoint.sh
 		..\..\MyFirstAspNetCoreApp\wercker.yml = ..\..\MyFirstAspNetCoreApp\wercker.yml
 	EndProjectSection
 EndProject
