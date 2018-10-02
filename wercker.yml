@@ -15,15 +15,8 @@ build:
         code: |
           dotnet publish -o publish	
     - script:
-        name: test-restore
-        code: |
-          dotnet restore
-    - script:
-        name: test-build
-        code: |
-          dotnet build
-    - script:
         name: test-run
+        cwd: StatlerWaldorf.TeamService.Tests
         code: |
           dotnet test
     - script:
